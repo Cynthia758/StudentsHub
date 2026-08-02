@@ -75,7 +75,7 @@ section{
     z-index:100;
 }
 .logo a{
-    color:white;
+    color:#fff;
     font-size:34px;
     font-weight:700;
     letter-spacing:1px;
@@ -86,7 +86,7 @@ section{
     list-style:none;
 }
 .nav-links a{
-    color:white;
+    color:#fff;
     font-size:16px;
     font-weight:500;
     transition:.3s;
@@ -99,7 +99,7 @@ section{
     gap:15px;
 }
 .login-btn{
-    color:white;
+    color:#fff;
     border:1px solid rgba(255,255,255,.5);
     padding:12px 28px;
     border-radius:40px;
@@ -110,7 +110,7 @@ section{
 }
 .register-btn{
     background:var(--gold);
-    color:white;
+    color:#fff;
     padding:12px 28px;
     border-radius:40px;
     transition:.3s;
@@ -120,7 +120,7 @@ section{
 }
 .primary-btn{
     background:var(--gold);
-    color:white;
+    color:#fff;
     padding:15px 35px;
     border-radius:40px;
     display:inline-block;
@@ -132,7 +132,7 @@ section{
 }
 .secondary-btn{
     border:1px solid rgba(255,255,255,.5);
-    color:white;
+    color:#fff;
     padding:15px 35px;
     border-radius:40px;
     transition:.35s;
@@ -147,9 +147,12 @@ section{
     align-items:center;
     flex-direction:column;
     text-align:center;
-    color:white;
+    color:#fff;
     position:relative;
     z-index:5;
+}
+.campus {
+    font-size: 60px;
 }
 .tagline{
     color:#f2dc93;
@@ -158,7 +161,7 @@ section{
     margin-bottom:18px;
 }
 .hero-content h1{
-    font-size:78px;
+    font-size:400px;
     line-height:1.1;
    margin-bottom:25px;
 }
@@ -177,7 +180,7 @@ section{
 .hero-content{
     animation:fadeUp 1.2s ease;
 }
-@keyframes fadeUp{
+@keyframes fadeUp{ 
     from{
         opacity:0;
         transform:translateY(40px);
@@ -481,13 +484,11 @@ font-size:28px;
     font-weight:600;
     margin-bottom:20px;
 }
-
 .hero-content h1{
     font-size:70px;
     line-height:1.1;
     margin-bottom:25px;
 }
-
 .hero-content p{
     width:700px;
     max-width:100%;
@@ -500,7 +501,6 @@ font-size:28px;
     background:var(--light);
     padding:110px 0;
 }
-
 .about-text{
     max-width:850px;
     margin:auto;
@@ -511,12 +511,10 @@ font-size:28px;
     box-shadow:0 20px 45px rgba(0,0,0,.08);
     transition:.4s;
 }
-
 .about-text:hover{
     transform:translateY(-8px);
     box-shadow:0 25px 60px rgba(200,166,77,.18);
 }
-
 .about-text span{
     display:inline-block;
     color:var(--gold);
@@ -526,13 +524,11 @@ font-size:28px;
     font-weight:600;
     margin-bottom:18px;
 }
-
 .about-text h2{
     font-size:48px;
     color:#222;
     margin-bottom:25px;
 }
-
 .about-text p{
     color:#666;
     line-height:1.9;
@@ -543,13 +539,11 @@ font-size:28px;
     background:#fff;
     padding:110px 0;
 }
-
 .mission .container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:35px;
 }
-
 .mission-card{
     background:var(--light);
     padding:40px;
@@ -557,18 +551,15 @@ font-size:28px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
     transition:.4s;
 }
-
 .mission-card:hover{
     transform:translateY(-12px);
     box-shadow:0 18px 45px rgba(200,166,77,.25);
 }
-
 .mission-card h3{
     color:#222;
     font-size:32px;
     margin-bottom:18px;
 }
-
 .mission-card p{
     color:#666;
     line-height:1.8;
@@ -577,7 +568,6 @@ font-size:28px;
     background:var(--light);
     padding:110px 0;
 }
-
 .feature-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -591,7 +581,6 @@ font-size:28px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
     transition:.4s;
 }
-
 .feature-card:hover{
     transform:translateY(-10px);
     box-shadow:0 18px 40px rgba(200,166,77,.20);
@@ -601,7 +590,6 @@ font-size:28px;
     font-size:28px;
     margin-bottom:18px;
 }
-
 .feature-card p{
     color:#666;
     line-height:1.8;
@@ -610,13 +598,11 @@ font-size:28px;
     background:#fff;
     padding:110px 0;
 }
-
 .statistics .container{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:35px;
 }
-
 .stat{
     text-align:center;
     padding:35px;
@@ -624,18 +610,15 @@ font-size:28px;
     border-radius:20px;
     transition:.35s;
 }
-
 .stat:hover{
     transform:translateY(-8px);
     box-shadow:0 15px 35px rgba(200,166,77,.15);
 }
-
 .stat h2{
     font-size:52px;
     color:var(--gold);
     margin-bottom:10px;
 }
-
 .stat p{
     color:#666;
     font-size:17px;
