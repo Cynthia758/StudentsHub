@@ -19,25 +19,17 @@
         <div class="logo">
             <a href="index.html">StudentHub</a>
         </div>
-
         <ul class="nav-links">
-
             <li><a href="index.html">Home</a></li>
-
             <li><a href="about.html">About</a></li>
-
             <li><a href="events.html">Events</a></li>
-
             <li><a href="faq.html">FAQ</a></li>
-
             <li><a href="contact.html">Contact</a></li>
             <li><a href="dashboard.html">Dashboard</li>
             <li><a href="profile.html">Profile</a></li>
             <li><a href="feedback.html">Feedback</a></li>
             <li><a href="admin.html">Admin</a></li>
-
         </ul>
-
         <div class="nav-buttons">
 
             <a href="login.html" class="login-btn">Login</a>
@@ -83,7 +75,7 @@
 
                 </h2>
 
-                <form>
+                <form id="loginform">
 
                     <label for="email">
 
@@ -154,7 +146,11 @@
     </div>
 
 </section>
+<script>
+    const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/;
 
+const passwordRegex = /^[a-zA-Z0-9]{8,}$/;
+</script>
 </body>
 
 </html>

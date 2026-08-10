@@ -92,7 +92,7 @@
 
                 </h2>
 
-                <form>
+                <form id="registerForm">
 
                     <label for="name">
 
@@ -115,7 +115,7 @@
                     </label>
 
                     <input
-                        type="email"
+                        type="text"
                         id="email"
                         placeholder="Enter your email"
                         required>
@@ -230,7 +230,6 @@
                     <a href="login.html">
 
                         Login
-
                     </a>
 
                 </p>
@@ -242,7 +241,11 @@
     </div>
 
 </section>
-
+<script>
+const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/;
+const studentIdRegex = /^\d{2}[A-Z]{3}\d{3}$/;
+const passwordRegex = /^[a-zA-Z0-9]{6,}$/;
+</script>
 </body>
 
 </html>
