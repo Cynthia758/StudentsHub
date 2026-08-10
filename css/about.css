@@ -31,16 +31,17 @@ body{
     display:flex;
     gap:35px;
     list-style:none;
+    
 }
 .nav-links a{
-    color:var(--gold);
+    color:var(--dark);
     font-size:16px;
     font-weight:500;
-    /* transition:.3s; */
+    transition:.3s;
 }
-/* .nav-links a:hover{
+.nav-links a:hover{
     color:var(--gold);
-} */
+}
 .nav-buttons{
     display:flex;
     gap:15px;
@@ -50,8 +51,8 @@ body{
     gap:15px;
 }
 .login-btn{
-    color:#c6c6c6;
-    border:1px solid rgba(255,255,255,.5);
+    color:var(--gold);
+    border:1px solid var(--gold);
     padding:12px 28px;
     border-radius:40px;
     transition:.3s;

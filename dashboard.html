@@ -7,174 +7,568 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description"
+        content="StudentHub student dashboard for events, announcements, activities and achievements.">
+
     <title>StudentHub | Dashboard</title>
 
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Dashboard CSS -->
+
+    <link rel="stylesheet" href="css/dashboard.css">
 
 </head>
 
+
 <body>
-<header class="dashboard-header">
 
-    <div class="logo">
 
-        <a href="index.html">StudentHub</a>
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="logo">
+
+            <a href="index.html">StudentHub</a>
+
+        </div>
+
+
+        <nav class="dashboard-nav" aria-label="User navigation">
+
+            <a href="profile.html">Profile</a>
+
+            <a href="login.html" class="logout-btn">Logout</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= DASHBOARD LAYOUT ================= -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-title">
+
+                <span>MENU</span>
+
+            </div>
+
+
+            <nav aria-label="Dashboard navigation">
+
+                <ul>
+
+                    <li class="active">
+
+                        <a href="dashboard.html">
+
+                            <span class="nav-icon">⌂</span>
+
+                            <span>Dashboard</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="events.html">
+
+                            <span class="nav-icon">◷</span>
+
+                            <span>Events</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-icon">◉</span>
+
+                            <span>Announcements</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="profile.html">
+
+                            <span class="nav-icon">○</span>
+
+                            <span>Profile</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="feedback.html">
+
+                            <span class="nav-icon">✦</span>
+
+                            <span>Feedback</span>
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="#">
+
+                            <span class="nav-icon">⚙</span>
+
+                            <span>Settings</span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="sidebar-footer">
+
+                <p>StudentHub</p>
+
+                <span>Student Portal</span>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="dashboard-content">
+
+
+            <!-- Page heading -->
+
+            <div class="page-heading">
+
+                <div>
+
+                    <p class="eyebrow">STUDENT DASHBOARD</p>
+
+                    <h1>Welcome Back!</h1>
+
+                    <p class="heading-text">
+                        Here's what's happening on campus today.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= STATISTICS ================= -->
+
+            <section class="stats" aria-label="Student statistics">
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+
+                        <span class="stat-label">
+                            Registered Events
+                        </span>
+
+                        <span class="stat-symbol">01</span>
+
+                    </div>
+
+                    <h2>05</h2>
+
+                    <p>
+                        Events you're registered for
+                    </p>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+
+                        <span class="stat-label">
+                            Announcements
+                        </span>
+
+                        <span class="stat-symbol">02</span>
+
+                    </div>
+
+                    <h2>12</h2>
+
+                    <p>
+                        New campus updates
+                    </p>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+
+                        <span class="stat-label">
+                            Attendance
+                        </span>
+
+                        <span class="stat-symbol">03</span>
+
+                    </div>
+
+                    <h2>92%</h2>
+
+                    <p>
+                        Current attendance rate
+                    </p>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-top">
+
+                        <span class="stat-label">
+                            Achievements
+                        </span>
+
+                        <span class="stat-symbol">04</span>
+
+                    </div>
+
+                    <h2>08</h2>
+
+                    <p>
+                        Achievements earned
+                    </p>
+
+                </article>
+
+
+            </section>
+
+
+
+            <!-- ================= DASHBOARD GRID ================= -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- Upcoming Events -->
+
+                <section class="dashboard-section">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="section-label">
+                                CAMPUS
+                            </p>
+
+                            <h2>Upcoming Events</h2>
+
+                        </div>
+
+                        <a href="events.html">
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <ul class="event-list">
+
+                        <li>
+
+                            <div class="date-box">
+
+                                <span>15</span>
+
+                                <small>AUG</small>
+
+                            </div>
+
+                            <div class="item-content">
+
+                                <h3>Annual Hackathon</h3>
+
+                                <p>Innovation & Technology</p>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="date-box">
+
+                                <span>28</span>
+
+                                <small>AUG</small>
+
+                            </div>
+
+                            <div class="item-content">
+
+                                <h3>AI Workshop</h3>
+
+                                <p>Artificial Intelligence</p>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <div class="date-box">
+
+                                <span>05</span>
+
+                                <small>SEP</small>
+
+                            </div>
+
+                            <div class="item-content">
+
+                                <h3>Cultural Fest</h3>
+
+                                <p>Campus & Cultural Activities</p>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+
+                <!-- Recent Announcements -->
+
+                <section class="dashboard-section">
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <p class="section-label">
+                                UPDATES
+                            </p>
+
+                            <h2>Announcements</h2>
+
+                        </div>
+
+                        <a href="#">
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <ul class="announcement-list">
+
+                        <li>
+
+                            <span class="announcement-dot"></span>
+
+                            <div>
+
+                                <h3>
+                                    Semester Examination Schedule Released
+                                </h3>
+
+                                <p>
+                                    Academic Office
+                                </p>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <span class="announcement-dot"></span>
+
+                            <div>
+
+                                <h3>
+                                    Library will remain open till 9 PM
+                                </h3>
+
+                                <p>
+                                    Library Department
+                                </p>
+
+                            </div>
+
+                        </li>
+
+
+                        <li>
+
+                            <span class="announcement-dot"></span>
+
+                            <div>
+
+                                <h3>
+                                    Registration for Sports Week has started
+                                </h3>
+
+                                <p>
+                                    Student Activities
+                                </p>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- ================= RECENT ACTIVITY ================= -->
+
+            <section class="dashboard-section activity-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            YOUR ACTIVITY
+                        </p>
+
+                        <h2>Recent Activity</h2>
+
+                    </div>
+
+                </div>
+
+
+                <ul class="activity-list">
+
+                    <li>
+
+                        <span class="activity-check">
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Registered for Annual Hackathon
+                            </h3>
+
+                            <p>
+                                Recently
+                            </p>
+
+                        </div>
+
+                    </li>
+
+
+                    <li>
+
+                        <span class="activity-check">
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Updated Student Profile
+                            </h3>
+
+                            <p>
+                                Recently
+                            </p>
+
+                        </div>
+
+                    </li>
+
+
+                    <li>
+
+                        <span class="activity-check">
+                            ✓
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Submitted Feedback Form
+                            </h3>
+
+                            <p>
+                                Recently
+                            </p>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+        </main>
 
     </div>
 
-    <div class="dashboard-nav">
-
-        <a href="profile.html">Profile</a>
-
-        <a href="login.html">Logout</a>
-
-    </div>
-
-</header>
-<section class="dashboard">
-    <aside class="sidebar">
-
-        <h3>
-
-            Navigation
-
-        </h3>
-
-        <ul>
-
-            <li><a href="dashboard.html">Dashboard</a></li>
-
-            <li><a href="events.html">Events</a></li>
-
-            <li><a href="#">Announcements</a></li>
-
-            <li><a href="profile.html">Profile</a></li>
-
-            <li><a href="feedback.html">Feedback</a></li>
-
-            <li><a href="#">Settings</a></li>
-
-        </ul>
-
-    </aside>
-    <main class="dashboard-content">
-        <section class="welcome-card">
-
-            <h1>
-
-                Welcome Back!
-
-            </h1>
-
-            <p>
-
-                Here's what's happening on campus today.
-
-            </p>
-
-        </section>
-        <section class="stats">
-
-            <div class="stat-card">
-
-                <h2>05</h2>
-
-                <p>Registered Events</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <h2>12</h2>
-
-                <p>Announcements</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <h2>92%</h2>
-
-                <p>Attendance</p>
-
-            </div>
-
-            <div class="stat-card">
-
-                <h2>08</h2>
-
-                <p>Achievements</p>
-
-            </div>
-
-        </section>
-        <section class="dashboard-section">
-
-            <h2>
-
-                Upcoming Events
-
-            </h2>
-
-            <ul>
-
-                <li>Annual Hackathon - 15 August</li>
-
-                <li>AI Workshop - 28 August</li>
-
-                <li>Cultural Fest - 5 September</li>
-
-            </ul>
-
-        </section>
-        <section class="dashboard-section">
-
-            <h2>
-
-                Recent Announcements
-
-            </h2>
-
-            <ul>
-
-                <li>Semester Examination Schedule Released.</li>
-
-                <li>Library will remain open till 9 PM.</li>
-
-                <li>Registration for Sports Week has started.</li>
-
-            </ul>
-
-        </section>
-        <section class="dashboard-section">
-
-            <h2>
-
-                Recent Activity
-
-            </h2>
-
-            <ul>
-
-                <li>✔ Registered for Annual Hackathon</li>
-
-                <li>✔ Updated Student Profile</li>
-
-                <li>✔ Submitted Feedback Form</li>
-
-            </ul>
-
-        </section>
-
-    </main>
-
-</section>
 
 </body>
 
