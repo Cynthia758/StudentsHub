@@ -41,6 +41,9 @@
             <li><a href="faq.html">FAQ</a></li>
 
             <li><a href="contact.html">Contact</a></li>
+            <div class="nav-buttons">
+
+</div>
 
         </ul>
 
@@ -49,6 +52,9 @@
             <a href="login.html" class="login-btn">Login</a>
 
             <a href="register.html" class="register-btn">Register</a>
+
+            <button id="themeToggle" type="button">🌙 Dark</button>
+
 
         </div>
 
@@ -105,8 +111,6 @@
                         id="name"
                         placeholder="Enter your full name"
                         required>
-
-
 
                     <label for="email">
 
@@ -241,11 +245,9 @@
     </div>
 
 </section>
-<script>
-const emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/;
-const studentIdRegex = /^\d{2}[A-Z]{3}\d{3}$/;
-const passwordRegex = /^[a-zA-Z0-9]{6,}$/;
-</script>
+
+<script src="js/register.js"></script>
+<script src="js/theme.js"></script>
 </body>
 
 </html>

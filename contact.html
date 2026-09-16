@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,6 +48,10 @@
 
             <a href="register.html" class="register-btn">Register</a>
 
+            <button id="themeToggle" type="button">🌙 Dark</button>
+
+            
+
         </div>
 
     </nav>
@@ -89,9 +91,7 @@
         <div class="info-card">
 
             <h3>Address</h3>
-
             <p>
-
                 CHARUSAT University<br>
 
                 Changa, Anand,<br>
@@ -101,9 +101,6 @@
             </p>
 
         </div>
-
-
-
         <div class="info-card">
 
             <h3>Email</h3>
@@ -121,9 +118,6 @@
             </p>
 
         </div>
-
-
-
         <div class="info-card">
 
             <h3>Phone</h3>
@@ -170,24 +164,28 @@
         </div>
         <div class="form-right">
 
-            <form>
+            <form id="contactform">
 
                 <input
+                    id="Name"
                     type="text"
                     placeholder="Full Name"
                     required>
 
                 <input
+                id="Email"
                     type="email"
                     placeholder="Email Address"
                     required>
 
                 <input
+                    id="Subject"
                     type="text"
                     placeholder="Subject"
                     required>
 
                 <textarea
+                id="Message"
                     rows="6"
                     placeholder="Your Message"
                     required>
@@ -288,9 +286,6 @@
             </p>
 
         </div>
-
-
-
         <div>
 
             <h3>
@@ -340,6 +335,7 @@
 
 </footer>
 
+<script src="js/contact.js"></script>
 </body>
 
 </html>

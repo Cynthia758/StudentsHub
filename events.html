@@ -50,6 +50,8 @@
 
             <a href="register.html" class="register-btn">Register</a>
 
+            <button id="themeToggle" type="button">🌙 Dark</button>
+
         </div>
 
     </nav>
@@ -86,112 +88,38 @@
 
     <div class="container">
 
-        <h2>
+        <h2>Upcoming Events</h2>
 
-            Upcoming Events
+        <div class="event-controls">
 
-        </h2>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search events...">
 
-        <div class="event-grid">
+            <select id="categoryFilter">
 
-            <article class="event-card">
+                <option value="All">All Categories</option>
+                <option value="Technical">Technical</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Seminar">Seminar</option>
 
-                <img src="images/events-hack.jpeg" alt="Hackathon">
+            </select>
 
-                <div class="event-info">
+            <select id="sortSelect">
 
-                    <span>15 August 2026</span>
+                <option value="default">Sort By</option>
+                <option value="title">Title</option>
+                <option value="date">Date</option>
 
-                    <h3>
-
-                        Annual Hackathon
-
-                    </h3>
-
-                    <p>
-
-                        Participate in coding,
-                        innovation and problem-solving.
-
-                    </p>
-
-                    <button>
-
-                        Register
-
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <article class="event-card">
-
-                <img src="images/event-workshop.jpeg" alt="Workshop">
-
-                <div class="event-info">
-
-                    <span>28 August 2026</span>
-
-                    <h3>
-
-                        ROBOTICS Workshop
-
-                    </h3>
-
-                    <p>
-
-                        Learn Robotics
-                        from industry professionals.
-
-                    </p>
-
-                    <button>
-
-                        Register
-
-                    </button>
-
-                </div>
-
-            </article>
-
-
-
-            <article class="event-card">
-
-                <img src="images/event-music.jpeg" alt="Fest">
-
-                <div class="event-info">
-
-                    <span>5 September 2026</span>
-
-                    <h3>
-
-                        Cultural Fest
-
-                    </h3>
-
-                    <p>
-
-                        Music, dance,
-                        art and entertainment.
-
-                    </p>
-
-                    <button>
-
-                        Register
-
-                    </button>
-
-                </div>
-
-            </article>
+            </select>
 
         </div>
+
+        <div class="event-grid" id="eventGrid"></div>
+
+        <div id="pagination"></div>
 
     </div>
 
@@ -335,7 +263,7 @@
     </p>
 
 </footer>
-
+<script src="js/events.js"></script>
 </body>
 
 </html>
