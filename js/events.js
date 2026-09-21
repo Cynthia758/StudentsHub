@@ -10,8 +10,6 @@ let currentPage = 1;
 
 const eventsPerPage = 6;
 
-// Fetch API
-
 fetch("data/events.json")
     .then(response => response.json())
     .then(data => {
@@ -26,17 +24,12 @@ fetch("data/events.json")
     });
 
 
-// Search
-
 searchInput.addEventListener("input", function () {
 
     currentPage = 1;
     applyFilters();
 
 });
-
-
-// Filter
 
 categoryFilter.addEventListener("change", function () {
 
@@ -45,18 +38,12 @@ categoryFilter.addEventListener("change", function () {
 
 });
 
-
-// Sorting
-
 sortSelect.addEventListener("change", function () {
 
     currentPage = 1;
     applyFilters();
 
 });
-
-
-// Apply Search + Filter + Sort
 
 function applyFilters() {
 
@@ -96,9 +83,6 @@ function applyFilters() {
 
 }
 
-
-// Dynamic Rendering
-
 function displayEvents() {
 
     eventGrid.innerHTML = "";
@@ -117,7 +101,6 @@ function displayEvents() {
         pagination.innerHTML = "";
 
         return;
-
     }
 
     pageEvents.forEach(event => {
@@ -147,9 +130,7 @@ function displayEvents() {
                 <p>${event.description}</p>
 
                 <button>Register</button>
-
             </div>
-
         </article>
 
         `;
@@ -159,10 +140,6 @@ function displayEvents() {
     displayPagination();
 
 }
-
-
-// Pagination
-
 function displayPagination() {
 
     pagination.innerHTML = "";
@@ -192,7 +169,6 @@ function displayPagination() {
         });
 
         pagination.appendChild(button);
-
     }
 
 }

@@ -25,48 +25,48 @@
         "date": "2026-09-12",
         "category": "Seminar",
         "description": "Explore artificial intelligence with expert speakers.",
-        "image": "images/event-feat.jpeg"
+        "image": "images/ai-ml-pic.jpeg"
     },
     {
         "title": "Web Development Bootcamp",
         "date": "2026-09-18",
         "category": "Workshop",
         "description": "Build modern responsive websites.",
-        "image": "images/events1.jpg"
+        "image": "images/webdev-pic.jpeg"
     },
     {
         "title": "Cyber Security Workshop",
         "date": "2026-09-22",
         "category": "Technical",
         "description": "Learn ethical hacking and cyber security basics.",
-        "image": "images/events2.jpg"
+        "image": "images/cyber-pic.jpeg"
     },
     {
         "title": "Dance Competition",
         "date": "2026-09-25",
         "category": "Cultural",
         "description": "Show your talent in the annual dance competition.",
-        "image": "images/events3.jpg"
+        "image": "images/dance-pic.jpeg"
     },
     {
         "title": "Startup Seminar",
         "date": "2026-10-02",
         "category": "Seminar",
         "description": "Meet entrepreneurs and startup founders.",
-        "image": "images/events4.jpg"
+        "image": "images/startup-pic.jpeg"
     },
     {
         "title": "Coding Contest",
         "date": "2026-10-08",
         "category": "Technical",
         "description": "Compete with students in programming challenges.",
-        "image": "images/events5.jpg"
+        "image": "images/code-contest-pic.jpeg"
     },
     {
-        "title": "Photography Workshop",
+        "title": "Personality Development Workshop",
         "date": "2026-10-15",
         "category": "Workshop",
-        "description": "Learn professional photography techniques.",
-        "image": "images/gallery6.jpg"
+        "description": "Improve Your Mental Health.",
+        "image": "images/intelligence-pic.jpeg"
     }
 ]

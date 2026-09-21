@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const faqItems = document.querySelectorAll(".faq-item");
-
     faqItems.forEach(function (item) {
 
         const question = item.querySelector("h3");
@@ -35,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 question.classList.remove("active");
 
             }
-
         });
 
     });
