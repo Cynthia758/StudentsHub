@@ -83,6 +83,30 @@ section{
     padding:10px 22px;
     border-radius:30px;
 }
+#themeToggle{
+    justify-self: end;
+
+    text-decoration: none;
+
+    border: 1px solid var(--gold);
+
+    background: var(--white);
+
+    color: var(--dark) !important;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    font-size: 13px !important;
+
+    transition: all 0.3s ease;
+}
+#themeToggle:hover{
+     background: var(--gold);
+
+    color: var(--white) !important;
+}
 
 .page-hero{
     padding:80px 20px 30px;
@@ -270,26 +294,162 @@ footer hr{
 .register-card button:hover {
     background: #b28f36;
 }
+/* =========================================
+   DARK THEME - FAQ PAGE
+   ========================================= */
 
-#themeToggle {
-    width: auto;
-    margin-top: 0;
-    padding: 10px 16px;
-    border: 1px solid var(--gold);
-    border-radius: 25px;
-    background: transparent;
-    color: var(--dark);
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    cursor: pointer;
-    transition: .3s;
+body.dark-mode {
+    background: #0d1728;
+    color: #f5f5f5;
 }
 
-#themeToggle:hover {
-    background: var(--gold);
-    color: #fff;
+/* ---------- Navbar ---------- */
+
+body.dark-mode .navbar {
+    background: #0d1728;
 }
+
+body.dark-mode .logo a,
+body.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #c8a64d;
+}
+
+/* ---------- Navbar Buttons ---------- */
+
+body.dark-mode .login-btn {
+    color: #ffffff;
+    border-color: #c8a64d;
+}
+
+body.dark-mode .login-btn:hover {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+body.dark-mode .register-btn {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+body.dark-mode .register-btn:hover {
+    background: #ffffff;
+    color: #0d1728;
+}
+
+/* ---------- Theme Toggle ---------- */
 
 body.dark-mode #themeToggle {
-    color: #fff;
+    background: transparent;
+    color: #ffffff;
+    border-color: #c8a64d;
+}
+
+body.dark-mode #themeToggle:hover {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+/* ---------- Hero ---------- */
+
+body.dark-mode .page-hero {
+    background-color: #111d31;
+}
+
+body.dark-mode .hero-content span {
+    color: #c8a64d;
+}
+
+body.dark-mode .hero-content h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .hero-content p {
+    color: #cbd5e1;
+}
+
+/* ---------- FAQ Section ---------- */
+
+body.dark-mode .faq-section {
+    background: #0d1728;
+}
+
+body.dark-mode .section-heading span {
+    color: #c8a64d;
+}
+
+body.dark-mode .section-heading h2 {
+    color: #ffffff;
+}
+
+/* ---------- FAQ Items ---------- */
+
+body.dark-mode .faq-item {
+    background: #16243a;
+    border-color: rgba(200, 166, 77, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .faq-item h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .faq-item p {
+    color: #cbd5e1;
+}
+
+/* ---------- Help Section ---------- */
+
+body.dark-mode .help-section {
+    background: #111d31;
+}
+
+body.dark-mode .help-section h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .help-section p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .primary-btn {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+body.dark-mode .primary-btn:hover {
+    background: #ffffff;
+    color: #0d1728;
+}
+
+/* ---------- Footer ---------- */
+
+body.dark-mode footer {
+    background: #080f1c;
+    color: #ffffff;
+}
+
+body.dark-mode footer h3 {
+    color: #c8a64d;
+}
+
+body.dark-mode footer p,
+body.dark-mode footer li,
+body.dark-mode footer a {
+    color: #cbd5e1;
+}
+
+body.dark-mode footer a:hover {
+    color: #c8a64d;
+}
+
+body.dark-mode footer hr {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .copyright {
+    color: #94a3b8;
 }

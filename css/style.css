@@ -663,3 +663,414 @@ font-size:28px;
 body.dark-mode #themeToggle {
     color: #fff;
 }
+/* =========================================
+   NOTIFICATION BANNER
+   ========================================= */
+
+.notification-banner {
+    width: fit-content;
+    max-width: 850px;
+    min-width: 600px;
+
+    margin: 28px auto 0;
+    padding: 10px 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: rgba(13, 23, 40, 0.94);
+    border: 1px solid rgba(200, 166, 77, 0.65);
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    position: relative;
+    z-index: 2;
+}
+
+.notification-banner > span {
+    color: #c8a64d;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.notification-banner p {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.notification-banner p strong {
+    color: #c8a64d;
+    font-weight: 600;
+}
+
+.notification-banner a {
+    color: #c8a64d;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    padding-left: 4px;
+}
+
+.notification-banner a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Close Button ---------- */
+
+#closeNotification {
+    width: 22px;
+    height: 22px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+
+    background: transparent;
+    color: #ffffff;
+
+    font-size: 14px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+
+    transition: 0.25s ease;
+}
+
+#closeNotification:hover {
+    background: #c8a64d;
+    border-color: #c8a64d;
+    color: #0d1728;
+}
+
+
+/* ---------- Keep Navbar Above Banner ---------- */
+
+.home-navbar {
+    position: relative;
+    z-index: 100;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .notification-banner {
+        width: 90%;
+        min-width: 0;
+        max-width: 500px;
+
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    .notification-banner p {
+        font-size: 9px;
+        white-space: normal;
+    }
+
+    .notification-banner a {
+        font-size: 9px;
+    }
+
+    #closeNotification {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+/* =========================================
+   CONTENT SLIDER
+   ========================================= */
+
+.content-slider {
+    padding: 70px 6%;
+    background: var(--light);
+}
+
+.slider-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+
+    margin: auto;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.6s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.slide::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(13, 23, 40, 0.88),
+        rgba(13, 23, 40, 0.45),
+        rgba(13, 23, 40, 0.1)
+    );
+}
+
+.slide-content {
+    position: absolute;
+
+    left: 8%;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    max-width: 500px;
+
+    z-index: 2;
+    color: #ffffff;
+}
+
+.slide-content span {
+    color: #c8a64d;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+.slide-content h2 {
+    margin: 12px 0;
+
+    color: #ffffff;
+
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.slide-content p {
+    color: #e2e8f0;
+
+    font-size: 13px;
+    line-height: 1.8;
+
+    margin-bottom: 22px;
+}
+
+.slider-btn {
+    display: inline-block;
+
+    padding: 11px 22px;
+
+    background: #c8a64d;
+    color: #0d1728;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: #ffffff;
+}
+
+
+/* ---------- Slider Arrows ---------- */
+
+.slider-prev,
+.slider-next {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 5;
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+
+    background: rgba(13, 23, 40, 0.5);
+    color: #ffffff;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+.slider-prev {
+    left: 20px;
+}
+
+.slider-next {
+    right: 20px;
+}
+
+.slider-prev:hover,
+.slider-next:hover {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+
+/* ---------- Slider Dots ---------- */
+
+.slider-dots {
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+
+    display: flex;
+    gap: 8px;
+}
+
+.slider-dots .dot {
+    width: 9px;
+    height: 9px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.slider-dots .dot.active {
+    width: 25px;
+    border-radius: 10px;
+    background: #c8a64d;
+}
+
+
+/* =========================================
+   DARK THEME
+   ========================================= */
+
+body.dark-mode .content-slider {
+    background: #0d1728;
+}
+
+body.dark-mode .notification-banner {
+    background: rgba(8, 15, 28, 0.95);
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .notification-banner {
+        width: 90%;
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    .notification-banner p {
+        font-size: 10px;
+    }
+
+    .notification-banner a {
+        font-size: 9px;
+    }
+
+    .slider-container {
+        height: 380px;
+    }
+
+    .slide-content {
+        left: 8%;
+        right: 8%;
+    }
+
+    .slide-content h2 {
+        font-size: 28px;
+    }
+
+    .slide-content p {
+        font-size: 11px;
+    }
+
+    .slider-prev,
+    .slider-next {
+        width: 35px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .slider-prev {
+        left: 10px;
+    }
+
+    .slider-next {
+        right: 10px;
+    }
+}

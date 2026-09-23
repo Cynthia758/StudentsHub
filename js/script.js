@@ -85,3 +85,119 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+/* =========================================
+   NOTIFICATION BANNER
+   ========================================= */
+
+const closeNotification = document.getElementById("closeNotification");
+const notificationBanner = document.getElementById("notificationBanner");
+
+if (closeNotification && notificationBanner) {
+    closeNotification.addEventListener("click", function () {
+        notificationBanner.style.display = "none";
+    });
+}
+
+
+/* =========================================
+   CONTENT SLIDER
+   ========================================= */
+
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+const prevButton = document.getElementById("sliderPrev");
+const nextButton = document.getElementById("sliderNext");
+
+let currentSlide = 0;
+let slideInterval;
+
+
+/* Show selected slide */
+
+function showSlide(index) {
+
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    slides.forEach(function (slide) {
+        slide.classList.remove("active");
+    });
+
+    dots.forEach(function (dot) {
+        dot.classList.remove("active");
+    });
+
+    slides[currentSlide].classList.add("active");
+
+    if (dots[currentSlide]) {
+        dots[currentSlide].classList.add("active");
+    }
+}
+
+
+/* Next slide */
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+
+/* Previous slide */
+
+function previousSlide() {
+    showSlide(currentSlide - 1);
+}
+
+
+/* Buttons */
+
+if (nextButton) {
+    nextButton.addEventListener("click", function () {
+        nextSlide();
+        restartSlider();
+    });
+}
+
+if (prevButton) {
+    prevButton.addEventListener("click", function () {
+        previousSlide();
+        restartSlider();
+    });
+}
+
+
+/* Dots */
+
+dots.forEach(function (dot, index) {
+
+    dot.addEventListener("click", function () {
+        showSlide(index);
+        restartSlider();
+    });
+
+});
+
+
+/* Auto slide */
+
+function startSlider() {
+    slideInterval = setInterval(nextSlide, 5000);
+}
+
+function restartSlider() {
+    clearInterval(slideInterval);
+    startSlider();
+}
+
+
+/* Start */
+
+if (slides.length > 0) {
+    showSlide(0);
+    startSlider();
+}

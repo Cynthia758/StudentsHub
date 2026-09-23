@@ -251,6 +251,17 @@ form textarea{
     font-size:15px;
     font-family:'Poppins',sans-serif;
 }
+#themeToggle
+{
+    background:var(--gold);
+    color:#fff;
+    padding:12px 28px;
+    border-radius:40px;
+    transition:.3s;
+}
+#themeToggle:hover{
+    background:#b28f36
+}
 
 form input:focus,
 form textarea:focus{
@@ -411,29 +422,236 @@ footer hr{
 .register-card button:hover {
     background: #b28f36;
 }
+/* =========================================
+   DARK THEME - CONTACT PAGE
+   ========================================= */
 
-
-/* ================= THEME SWITCHER ================= */
-
-#themeToggle {
-    width: auto;
-    margin-top: 0;
-    padding: 10px 16px;
-    border: 1px solid var(--gold);
-    border-radius: 25px;
-    background: transparent;
-    color: var(--dark);
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    cursor: pointer;
-    transition: .3s;
+body.dark-mode {
+    background: #0d1728;
+    color: #f5f5f5;
 }
 
-#themeToggle:hover {
-    background: var(--gold);
-    color: #fff;
+
+/* ---------- Navbar ---------- */
+
+body.dark-mode .navbar,
+body.dark-mode .home-navbar {
+    background: #0d1728;
 }
+
+body.dark-mode .logo a {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #c8a64d;
+}
+
+
+/* ---------- Navbar Buttons ---------- */
+
+body.dark-mode .login-btn {
+    color: #ffffff;
+    border-color: #c8a64d;
+}
+
+body.dark-mode .login-btn:hover {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+body.dark-mode .register-btn {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+body.dark-mode .register-btn:hover {
+    background: #ffffff;
+    color: #0d1728;
+}
+
+
+/* ---------- Theme Toggle ---------- */
 
 body.dark-mode #themeToggle {
-    color: #fff;
+    background: transparent;
+    color: #ffffff;
+    border-color: #c8a64d;
+}
+
+body.dark-mode #themeToggle:hover {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+
+/* ---------- Page Hero ---------- */
+
+body.dark-mode .page-hero {
+    background: #111d31;
+}
+
+body.dark-mode .hero-content span {
+    color: #c8a64d;
+}
+
+body.dark-mode .hero-content h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .hero-content p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- Contact Information ---------- */
+
+body.dark-mode .contact-info {
+    background: #0d1728;
+}
+
+body.dark-mode .info-card {
+    background: #16243a;
+    border: 1px solid rgba(200, 166, 77, 0.25);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .info-card h3 {
+    color: #c8a64d;
+}
+
+body.dark-mode .info-card p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- Contact Form ---------- */
+
+body.dark-mode .contact-form {
+    background: #111d31;
+}
+
+body.dark-mode .form-left span {
+    color: #c8a64d;
+}
+
+body.dark-mode .form-left h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .form-left p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- Form Inputs ---------- */
+
+body.dark-mode form input,
+body.dark-mode form textarea {
+    background: #16243a;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode form input::placeholder,
+body.dark-mode form textarea::placeholder {
+    color: #94a3b8;
+}
+
+body.dark-mode form input:focus,
+body.dark-mode form textarea:focus {
+    border-color: #c8a64d;
+    box-shadow: 0 0 0 2px rgba(200, 166, 77, 0.1);
+}
+
+
+/* ---------- Form Button ---------- */
+
+body.dark-mode form button {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+body.dark-mode form button:hover {
+    background: #b28f36;
+    color: #ffffff;
+}
+
+
+/* ---------- Map ---------- */
+
+body.dark-mode .map-section {
+    background: #0d1728;
+}
+
+body.dark-mode .map-section h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .map-placeholder {
+    background: #16243a;
+    color: #94a3b8;
+    border: 1px solid rgba(200, 166, 77, 0.2);
+}
+
+
+/* ---------- Office Hours ---------- */
+
+body.dark-mode .office-hours {
+    background: #111d31;
+}
+
+body.dark-mode .office-hours h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .hours-grid div {
+    background: #16243a;
+    border: 1px solid rgba(200, 166, 77, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .hours-grid h3 {
+    color: #c8a64d;
+}
+
+body.dark-mode .hours-grid p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- Footer ---------- */
+
+body.dark-mode footer {
+    background: #080f1c;
+    color: #ffffff;
+}
+
+body.dark-mode footer h3 {
+    color: #c8a64d;
+}
+
+body.dark-mode footer p,
+body.dark-mode footer li {
+    color: #cbd5e1;
+}
+
+body.dark-mode footer a {
+    color: #cbd5e1;
+}
+
+body.dark-mode footer a:hover {
+    color: #c8a64d;
+}
+
+body.dark-mode footer hr {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .copyright {
+    color: #94a3b8;
 }

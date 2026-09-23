@@ -139,7 +139,30 @@ body {
     display: none;
 }
 
+#themeToggle{
+    justify-self: end;
 
+    text-decoration: none;
+
+    border: 1px solid var(--gold);
+
+    background: var(--white);
+
+    color: var(--dark) !important;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    font-size: 13px !important;
+
+    transition: all 0.3s ease;
+}
+#themeToggle:hover{
+     background: var(--gold);
+
+    color: var(--white) !important;
+}
 /* LAYOUT */
 
 .dashboard-layout {
@@ -880,29 +903,258 @@ body {
 .register-card button:hover {
     background: #b28f36;
 }
+/* =========================================
+   DARK THEME - DASHBOARD
+   ========================================= */
+
+body.dark-mode {
+    background: #0d1728;
+    color: #f5f5f5;
+}
 
 
-/* ================= THEME SWITCHER ================= */
+/* ---------- Top Navbar ---------- */
 
-#themeToggle {
-    width: auto;
-    margin-top: 0;
-    padding: 10px 16px;
-    border: 1px solid var(--gold);
-    border-radius: 25px;
+body.dark-mode .top-header {
+    background: #0d1728;
+    border-bottom-color: rgba(200, 166, 77, 0.25);
+}
+
+body.dark-mode .logo a {
+    color: #ffffff;
+}
+
+body.dark-mode .dashboard-nav a {
+    color: #ffffff;
+}
+
+body.dark-mode .dashboard-nav a:hover {
+    color: #c8a64d;
+}
+
+body.dark-mode .dashboard-nav a::after {
+    background: #c8a64d;
+}
+
+
+/* ---------- Logout Button ---------- */
+
+body.dark-mode .logout-btn {
     background: transparent;
-    color: var(--dark);
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    cursor: pointer;
-    transition: .3s;
+    color: #ffffff !important;
+    border-color: #c8a64d;
 }
 
-#themeToggle:hover {
-    background: var(--gold);
-    color: #fff;
+body.dark-mode .logout-btn:hover {
+    background: #c8a64d;
+    color: #0d1728 !important;
 }
+
+
+/* ---------- Theme Toggle ---------- */
 
 body.dark-mode #themeToggle {
-    color: #fff;
+    background: transparent;
+    color: #ffffff;
+    border-color: #c8a64d;
+}
+
+body.dark-mode #themeToggle:hover {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+
+/* ---------- Dashboard Layout ---------- */
+
+body.dark-mode .dashboard-layout {
+    background: #0d1728;
+}
+
+
+/* ---------- Sidebar ---------- */
+
+body.dark-mode .sidebar {
+    background: #111d31;
+    border-right-color: rgba(200, 166, 77, 0.2);
+}
+
+body.dark-mode .sidebar li a {
+    color: #cbd5e1;
+}
+
+body.dark-mode .sidebar li a:hover {
+    background: #16243a;
+    color: #c8a64d;
+}
+
+body.dark-mode .sidebar li.active a {
+    background: #16243a;
+    color: #c8a64d;
+}
+
+body.dark-mode .sidebar li.active a::before {
+    background: #c8a64d;
+}
+
+body.dark-mode .sidebar-footer {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .sidebar-footer p {
+    color: #ffffff;
+}
+
+body.dark-mode .sidebar-footer span {
+    color: #c8a64d;
+}
+
+
+/* ---------- Main Content ---------- */
+
+body.dark-mode .dashboard-content {
+    background: #0d1728;
+}
+
+body.dark-mode .page-heading h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .heading-text {
+    color: #cbd5e1;
+}
+
+body.dark-mode .eyebrow {
+    color: #c8a64d;
+}
+
+
+/* ---------- Statistics Cards ---------- */
+
+body.dark-mode .stat-card {
+    background: #16243a;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .stat-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .stat-label {
+    color: #ffffff;
+}
+
+body.dark-mode .stat-symbol {
+    color: #c8a64d;
+}
+
+body.dark-mode .stat-card h2 {
+    color: #c8a64d;
+}
+
+body.dark-mode .stat-card p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- Dashboard Sections ---------- */
+
+body.dark-mode .dashboard-section {
+    background: #16243a;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .section-heading {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .section-label {
+    color: #c8a64d;
+}
+
+body.dark-mode .section-heading h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .section-heading > a {
+    color: #c8a64d;
+}
+
+
+/* ---------- Events ---------- */
+
+body.dark-mode .event-list li {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .date-box {
+    background: #111d31;
+}
+
+body.dark-mode .date-box span {
+    color: #ffffff;
+}
+
+body.dark-mode .date-box small {
+    color: #c8a64d;
+}
+
+body.dark-mode .item-content h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .item-content p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- Announcements ---------- */
+
+body.dark-mode .announcement-list li {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .announcement-list h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .announcement-list p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- Recent Activity ---------- */
+
+body.dark-mode .activity-list li {
+    background: #16243a;
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .activity-list li:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .activity-check {
+    background: #111d31;
+    color: #c8a64d;
+}
+
+body.dark-mode .activity-list h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .activity-list p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- Mobile Sidebar ---------- */
+
+@media (max-width: 700px) {
+
+    body.dark-mode .sidebar {
+        border-right: none;
+        border-bottom-color: rgba(200, 166, 77, 0.2);
+    }
+
 }

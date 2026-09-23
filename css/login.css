@@ -276,29 +276,146 @@ button:hover{
 .register-card button:hover {
     background: #b28f36;
 }
+/* =========================================
+   DARK THEME - LOGIN PAGE
+   ========================================= */
 
-
-/* ================= THEME SWITCHER ================= */
-
-#themeToggle {
-    width: auto;
-    margin-top: 0;
-    padding: 10px 16px;
-    border: 1px solid var(--gold);
-    border-radius: 25px;
-    background: transparent;
-    color: var(--dark);
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    cursor: pointer;
-    transition: .3s;
+body.dark-mode {
+    background: #0d1728;
+    color: #f5f5f5;
 }
 
-#themeToggle:hover {
-    background: var(--gold);
-    color: #fff;
+/* ---------- Navbar ---------- */
+
+body.dark-mode .navbar {
+    background: #0d1728;
+    border-bottom-color: rgba(200, 166, 77, 0.25);
 }
+
+body.dark-mode .logo a,
+body.dark-mode .nav-links a {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-links a:hover {
+    color: #c8a64d;
+}
+
+/* ---------- Navbar Buttons ---------- */
+
+body.dark-mode .login-btn {
+    color: #ffffff;
+    border-color: #c8a64d;
+}
+
+body.dark-mode .login-btn:hover {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+body.dark-mode .register-btn {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+body.dark-mode .register-btn:hover {
+    background: #ffffff;
+    color: #0d1728;
+}
+
+/* ---------- Theme Toggle ---------- */
 
 body.dark-mode #themeToggle {
-    color: #fff;
+    background: transparent;
+    color: #ffffff;
+    border-color: #c8a64d;
+}
+
+body.dark-mode #themeToggle:hover {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+/* ---------- Login Page ---------- */
+
+body.dark-mode .login-page {
+    background-color: #0d1728;
+}
+
+body.dark-mode .login-left span {
+    color: #c8a64d;
+}
+
+body.dark-mode .login-left h1 {
+    color: #ffffff;
+}
+
+body.dark-mode .login-left p {
+    color: #cbd5e1;
+}
+
+/* ---------- Login Card ---------- */
+
+body.dark-mode .login-card {
+    background: #16243a;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+body.dark-mode .login-card h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .login-card label {
+    color: #cbd5e1;
+}
+
+/* ---------- Inputs ---------- */
+
+body.dark-mode .login-card input[type="email"],
+body.dark-mode .login-card input[type="password"] {
+    background: #111d31;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .login-card input::placeholder {
+    color: #94a3b8;
+}
+
+body.dark-mode .login-card input[type="email"]:focus,
+body.dark-mode .login-card input[type="password"]:focus {
+    border-color: #c8a64d;
+    outline: none;
+}
+
+/* ---------- Login Options ---------- */
+
+body.dark-mode .login-options {
+    color: #cbd5e1;
+}
+
+body.dark-mode .login-options a {
+    color: #c8a64d;
+}
+
+/* ---------- Login Button ---------- */
+
+body.dark-mode .login-card button[type="submit"] {
+    background: #c8a64d;
+    color: #0d1728;
+}
+
+body.dark-mode .login-card button[type="submit"]:hover {
+    background: #b28f36;
+    color: #ffffff;
+}
+
+/* ---------- Register Link ---------- */
+
+body.dark-mode .register-link {
+    color: #cbd5e1;
+}
+
+body.dark-mode .register-link a {
+    color: #c8a64d;
 }

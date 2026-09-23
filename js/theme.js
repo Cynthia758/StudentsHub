@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const themeToggle = document.getElementById("themeToggle");
 
+    if (!themeToggle) {
+        return;
+    }
+
     themeToggle.addEventListener("click", function () {
 
         document.body.classList.toggle("dark-mode");
