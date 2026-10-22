@@ -1,0 +1,26 @@
+
+# Personal data
+data/
+uploads/
+
+# Keep placeholder files for required folders
+!data/.gitkeep
+!uploads/.gitkeep
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.exe
+test_db.php
+hash_password.php
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">StudentHub</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="nav-buttons">
+</div>
+        </ul>
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="register.html" class="register-btn">Register</a>
+            <button id="themeToggle" type="button">🌙 Dark</button>
+        </div>
+    </nav>
+</header>
+<section class="register-page">
+    <div class="overlay">
+        <div class="register-container">
+            <div class="register-left">
+                <span>
+                    JOIN STUDENTHUB
+                </span>
+                <h1>
+                    Create Your Student Account
+                </h1>
+                <p>
+                    Become a part of StudentHub and
+                    enjoy seamless access to academics,
+                    events, announcements and your
+                    personalized dashboard.
+                </p>
+            </div>
+            <div class="register-card">
+                <h2>
+                    Register
+                </h2>
+                <form id="registerForm" method="POST" action="save_student.php">
+                    <label for="name">
+                        Full Name
+                    </label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+                    <label for="email">
+                        Email Address
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"placeholder="Enter your email"
+                        required>
+                    <label for="studentid">
+                        Student ID
+                    </label>
+                    <input
+                        type="text"
+                        id="studentid"
+                        name="student_id"
+                        placeholder="Enter your Student ID"
+                        required>
+                    <label for="department">
+                        Department
+                    </label>
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option>Computer Engineering</option>
+                        <option>Information Technology</option>
+                        <option>Computer Science & Engineering</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Civil Engineering</option>
+                    </select>
+                    <label for="semester">
+                        Semester
+                    </label>
+                    <select id="semester" name="semester" required>
+                        <option value="">Select Semester</option>
+                        <option>Semester 1</option>
+                        <option>Semester 2</option>
+                        <option>Semester 3</option>
+                        <option>Semester 4</option>
+                        <option>Semester 5</option>
+                        <option>Semester 6</option>
+                        <option>Semester 7</option>
+                        <option>Semester 8</option>
+                    </select>
+                    <label for="password">
+                        Password
+                    </label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required>
+                    <label for="confirm">
+                        Confirm Password
+                    </label>
+                    <input
+                        type="password"
+                        id="confirm"
+                        name="confirm_password"
+                        placeholder="Confirm your password"
+                        required>
+                    <button type="submit">
+                        Create Account
+                    </button>
+                </form>
+                <p class="login-link">
+                    Already have an account?
+                    <a href="login.html">
+                        Login
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/register.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>
